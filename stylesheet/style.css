@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(
+        3deg, 
+        #1d7969 0%,
+        #467cf1 100%);
+    
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    margin-top: 45px;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+#novaTarefaContainer {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 30px #4d4b4b83;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#novaTarefaContainer input {
+    font-size: 1rem;
+    padding: 3px;
+    border-radius: 8px;
+    border: 2px solid #928f8fbe;
+    font-weight: 500;
+    width: 90%;
+}
+
+#novaTarefaContainer input:focus {
+    outline: none;
+    border-color: #46f18d;
+}
+
+#novaTarefaContainer button {
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    height: 100%;
+    color: #fff;
+    background-color: #32c46f;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+    font-size: medium;
+    align-items: center;
+    justify-content: center;
+}
+
+#tarefas {
+    background-color: aliceblue;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px #4d4b4b83;
+    width: 100%;
+}
+.itemTarefa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.itemTarefa i {
+    background-color: #32c46f;
+    color: #fef;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.itemTarefa p {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* utilidades */
+.erro {
+    border: 2px solid rgb(214, 92, 92) !important;
+}
+.erro::placeholder {
+    color: rgb(214, 92, 92);
+}
+.completa {
+    color: #3f4642;
+    text-decoration: line-through;
+}
